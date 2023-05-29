@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ul{
+        list-style: none;
+    }
+}
+body{
+    display: grid;
+    place-items: center;
+}
+.btn{
+    padding: 8px 10px;
+    background-color: #2aa;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 5px 5px 5px #e4e4e4;
+    transition: all .3s;
+    margin-bottom: 1rem;
+    &:hover{
+        background-color: rgb(33, 163, 163);
+    }
+    &-dark{
+        background-color: #000;
+        transition: all .3s;
+        margin-top: 1rem;
+        &:hover{
+            background-color: #333;
+        }
+    }
+}
+.container{
+    margin-top: 2rem;
+    border: 1px solid #e2e2e2;
+    background-color: #f4f4f4;
+    width: 700px;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 10px 10px 10px #f4f4f4;
+    form{
+        position: relative;
+    }
+    label{
+        position: absolute;
+        bottom: .5rem;
+        z-index: 10;
+        color: #777;
+        font-size: 1.2rem;
+        transition: all .3s;
+    }
+    input[type='text']{
+        position: relative;
+        display: block;
+        border: none;
+        border-bottom: 2px solid rgb(199, 199, 199);
+        width: 80%;
+        background-color: #f4f4f4;
+        outline: none;
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        padding-top: 1rem;
+      //  height: 3rem;
+        &:focus{
+            border-bottom: 2px solid #2aa;
+        }
+    }
+    .input-group{
+        position: relative;
+    }
+    input:focus + label{
+        transform: translateY(-20px);
+        color: #2aa;
+        font-size: 1rem;
+    }
+    .top{
+        margin-bottom: 1rem;
+    }
+    ul{
+        .collection-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(199, 199, 199);
+            margin-top: 1rem;
+            padding-bottom: .5rem;
+            margin-bottom: .5rem;
+            a{
+                cursor: pointer;
+            }
+        }
+    }
+    .line{
+        width: 100%;
+        background-color: #c0c0c0;
+        height: .1rem;
+       position: absolute;
+       left: 0;
+    }
+    .bottom{
+        margin-top: 2rem;
+    }
+}

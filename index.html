@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <form action="#" class="form">
+                <h2>Task List</h2>
+                <div class="input-group">
+                    <input type="text" name="task" id="task">
+                    <label for="task">New Task</label>
+                </div>
+                <input type="submit" value="ADD TASK" class="btn">
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+            <h2>Tasks</h2>
+            <!-- <div class="input-group">
+                <input type="text" name="filter" id="filter">
+                <label for="filter">Filter Tasks</label>
+            </div> -->
+            <ul class="collection">
+                <li class="collection-item">
+                    First Task
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </li>
+            </ul>
+            <input type="submit" value="CLEAR TASKS" class="btn btn-dark">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
